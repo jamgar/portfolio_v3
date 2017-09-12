@@ -1,0 +1,38 @@
+body {
+  padding-top: 50px;
+  font-size: 1.8rem;
+}
+
+hr {
+  text-align: center;
+  width: 30%;
+}
+
+section {
+  padding: 50px 0;
+}
+
+footer {
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+/*--- Main ---*/
+.jumbotron {
+  background-image: url("../images/uploads/banner.jpg");
+  height: 60vh;
+  color: #ffffff;
+}
+
+#profile-pic {
+  max-width: 200px;
+  text-align: center;
+}
+
+/*--- Article Styles ---*/
+
+.article-img {
+  height: 40vh;
+  width: 100%;
+}

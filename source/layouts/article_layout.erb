@@ -1,0 +1,38 @@
+<% wrap_layout :layout do %>
+  <% if current_page.data.image %>
+    <div id="banner" class="row">
+      <%= tag :img, :src => current_page.data.image, class: "article-img center-block" %>
+    </div>
+  <% end %>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h2 class="text-center"><%= current_page.data.title %></h2>
+        <hr>
+        <%= yield %>
+      </div>
+    </div>
+    <aside>
+      <h2>Recent Articles</h2>
+      <ol>
+        <% blog.articles[0...10].each do |article| %>
+          <li><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></li>
+        <% end %>
+      </ol>
+
+      <h2>Tags</h2>
+      <ol>
+        <% blog.tags.each do |tag, articles| %>
+          <li><%= link_to "#{tag} (#{articles.size})", tag_path(tag) %></li>
+        <% end %>
+      </ol>
+
+      <h2>By Year</h2>
+      <ol>
+        <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
+          <li><%= link_to "#{year} (#{articles.size})", blog_year_path(year) %></li>
+        <% end %>
+      </ol>
+    </aside>
+  </div>
+<% end %>
