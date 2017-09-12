@@ -56,8 +56,8 @@ page "/feed.xml", layout: false
 
 # Methods defined in the helpers block are available in templates
 # helpers do
-#   def some_helper
-#     "Helping"
+#   def nav_active(path)
+#     current_page.path == path ? { :class => "active" } : {}
 #   end
 # end
 
