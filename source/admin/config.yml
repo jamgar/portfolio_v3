@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: jamgar/portfolio_v3 # Path to your Github repository
+  branch: master # Branch to update (master by default)
+
+media_folder: "source/images/uploads" # Folder where user uploaded files should go
+public_folder: "/images/uploads" # CMS now knows 'source' is the public folder and will strip this from the path
+
+publish_mode: editorial_workflow
+
+collections:
+  - name: "blog" # Used in routes, e.g., /admin/collections/blog
+    label: "Blog" # Used in the UI
+    folder: "source/blog" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}.html" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Tags", name: "tags", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "image", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
