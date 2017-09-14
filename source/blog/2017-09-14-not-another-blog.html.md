@@ -1,7 +1,7 @@
 ---
 title: '"Not Another Blog"'
 tags: blog
-date: 2017-09-14T23:44:47.429Z
+date: 2017-05-05T18:44:47-05:00
 image: null
 directory_index: false
 ---
@@ -14,3 +14,4 @@ Flatiron uses an online teaching platform called Learn.co. I have been super ple
 Like I said earlier I have a passion for fitness. My fitness mainly revolves around training for triathlons. I came into doing triathlons about 5 years ago after doing some running and cycling events. It is often the case that after you do one triathlon race you will be bitten by the bug and want to do more. For those who do not know what a triathlon is, it is a race that consist of swimming, cycling and running events done in succession in the same day and in that order. They have different distances just like you find in running (i.e. 5k, 10k, half-marathon, marathon), but they are labeled Sprint, Olympic, Half-Ironman, Full-Ironman. As you may imagine, to get ready for these races it requires training, and depending on the distance you will need to prepare 2 to 6 months prior to race day. So it quickly becomes a lifestyle. In my experience the triathlon community is awesome. I have met some great people and have built some great friendships.
 
 Thank you for letting me share with you. I hope to come back with some material to help and inspire someone.
+
