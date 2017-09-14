@@ -1,7 +1,7 @@
 ---
 title: Building a Data Cli Gem
 tags: 'ruby, gem'
-date: 2017-09-14T23:46:17.711Z
+date: 2017-05-19T23:46:17.711Z
 image: null
 directory_index: false
 ---
