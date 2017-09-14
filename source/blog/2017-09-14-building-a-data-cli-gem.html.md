@@ -98,3 +98,4 @@ Next I created the \`#print_concerts(index)\` method inside of \`CLI\` class. Th
 As you can see the program does not do much, but what I learned from it was great. This lab was super fun and challenging. I had to think on my own on how to structure the classes and methods and apply what I have learned from the previous lessons. I did not do the bonus, which is to actually publish it. I would like to refactor and possibly add some features before taking that next step.
 
 Peace, Love, and Happy coding!
+
