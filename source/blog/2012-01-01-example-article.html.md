@@ -3,6 +3,7 @@ title: Example Article
 date: 2012-01-01
 tags: example
 image: /images/uploads/banner.jpg
+directory_index: false
 ---
 
 Pickled vice semiotics slow-carb gastropub franzen neutra plaid quinoa deep v kale chips brooklyn lyft synth pug. Chambray meh forage crucifix taiyaki mixtape asymmetrical woke chia helvetica. IPhone cray bespoke meh venmo. Sustainable craft beer lumbersexual fixie. Bushwick intelligentsia PBR&B subway tile, READMORE YOLO authentic franzen wolf. Iceland man braid food truck occupy ugh sriracha tilde readymade meggings activated charcoal thundercats gluten-free cred polaroid. VHS affogato letterpress crucifix, pickled succulents glossier keffiyeh enamel pin banjo cloud bread distillery kogi pug raclette. 90's drinking vinegar dreamcatcher, locavore disrupt retro master cleanse tbh hoodie readymade poutine. Heirloom authentic jianbing ethical, sustainable +1 blog. 8-bit selfies trust fund small batch flannel squid keffiyeh copper mug affogato lyft YOLO four loko retro iPhone la croix. Pok pok readymade fam hashtag try-hard portland single-origin coffee pork belly waistcoat sriracha pug farm-to-table. Stumptown gastropub freegan mumblecore adaptogen slow-carb occupy poutine cloud bread tousled. Asymmetrical 8-bit bespoke, air plant authentic blue bottle PBR&B snackwave twee ennui. Paleo four dollar toast ramps schlitz, portland deep v bitters typewriter artisan taxidermy shaman craft beer raclette semiotics.

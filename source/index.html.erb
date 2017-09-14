@@ -39,14 +39,6 @@
         <p><%= article.summary %></p>
       </div>
     <% end %>
-    <div class="col-md-4">
-      <h3>Article One</h3>
-      <p>Short description goes here</p>
-    </div>
-    <div class="col-md-4">
-      <h3>Article One</h3>
-      <p>Short description goes here</p>
-    </div>
   </div>
   <hr>
   <h4 class="text-center"><a href='../blogs.html'>See More</a></h4>
@@ -56,18 +48,12 @@
   <h2 class="text-center">Projects</h2>
   <hr>
   <div class="row">
-    <div class="col-md-4">
-      <h3>Project One</h3>
-      <p>Short description goes here</p>
-    </div>
-    <div class="col-md-4">
-      <h3>Project One</h3>
-      <p>Short description goes here</p>
-    </div>
-    <div class="col-md-4">
-      <h3>Project One</h3>
-      <p>Short description goes here</p>
-    </div>
+    <% data.projects[0...3].each do |project| %>
+      <div class="col-md-4">
+        <h3><%= link_to project.name, "#{project.path}.html" %></h3>
+        <p>Short description goes here</p>
+      </div>
+    <% end %>
   </div>
   <hr>
   <h4 class="text-center"><a href='/projects.html'>See More</a></h4>

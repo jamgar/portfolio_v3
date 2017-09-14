@@ -6,33 +6,33 @@
   <% end %>
   <div class="container">
     <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-        <h2 class="text-center"><%= current_page.data.title %></h2>
+      <div class="col-sm-8 col-sm-offset-2">
+        <h1 class="text-center"><%= current_page.data.title %></h1>
+        <p class="text-center"><small class="article-post-meta">Updated <%= time_ago_in_words(current_page.data.date) %> ago</small></p>
         <hr>
         <%= yield %>
+        <div class="row">
+          <div class="col-sm-12">
+            <h2>Tags</h2>
+            <% blog.tags.each do |tag, articles| %>
+              <span class="label label-success"><%= link_to "#{tag} (#{articles.size})", tag_path(tag) %></span>
+            <% end %>
+          </div>
+        </div><!-- /.row -->
+        <div class="row">
+          <h2 class="text-center">Recent Articles</h2>
+          <% blog.articles[0...2].each do |article| %>
+            <div class="col-sm-6">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <p><%= link_to article.title, article %></p>
+                    <small class="article-post-meta"><%= time_ago_in_words(article.date) %> ago</small>
+                </div>
+              </div>
+            </div>
+          <% end %>
+        </div><!-- /.row -->
       </div>
-    </div>
-    <aside>
-      <h2>Recent Articles</h2>
-      <ol>
-        <% blog.articles[0...10].each do |article| %>
-          <li><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></li>
-        <% end %>
-      </ol>
-
-      <h2>Tags</h2>
-      <ol>
-        <% blog.tags.each do |tag, articles| %>
-          <li><%= link_to "#{tag} (#{articles.size})", tag_path(tag) %></li>
-        <% end %>
-      </ol>
-
-      <h2>By Year</h2>
-      <ol>
-        <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
-          <li><%= link_to "#{year} (#{articles.size})", blog_year_path(year) %></li>
-        <% end %>
-      </ol>
-    </aside>
-  </div>
+    </div><!-- /.row -->
+  </div><!-- /.container -->
 <% end %>

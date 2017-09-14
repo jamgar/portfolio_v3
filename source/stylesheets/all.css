@@ -36,3 +36,8 @@ footer {
   height: 40vh;
   width: 100%;
 }
+
+.article-post-meta {
+  font-size: 1.2rem;
+  color: #999;
+}
