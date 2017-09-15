@@ -13,6 +13,7 @@ gem "middleman", "~> 4.1"
 gem "middleman-blog"
 
 gem 'redcarpet', '~> 3.3', '>= 3.3.3'
+gem 'middleman-rouge'
 gem 'nokogiri'
 
 # For feed.xml.builder
