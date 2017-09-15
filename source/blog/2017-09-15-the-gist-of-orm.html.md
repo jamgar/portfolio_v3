@@ -9,7 +9,7 @@ directory_index: false
 
 This article is a simple overview of what is ORM using Ruby and Sqlite3. I will give some code examples to better help explain the concept. ORM is a coding pattern used for a program to communicate with the database in a organized fashion. It is commonly used with Object Oriented Programming languages. The idea is that for each table in a database there is a corresponding class in the program and for each row in that table there is a corresponding instance of the class. So, if there is a database called 'marathons' and it has a table with 'races' there will be a class called 'race' and if the table has 10 rows (or records) than there will be 10 instances created in memory. As a side note, the convention for naming tables and classes in the ruby ORM world is to name the table as the pluralized version for the class name. That is why in our example the table will be called "races" and the class 'race'.
 
-![orm mapping](/uploads/gallery/image/3/orm1.png  "ORM Mapping")
+![orm mapping](/images/uploads/orm1.png)
 
 In our Ruby program we will continue with the marathon theme since I enjoy running. The first step is to create a connection to the database. I will create this connection in an environment.rb file.
 
