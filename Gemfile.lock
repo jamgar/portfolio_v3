@@ -73,6 +73,8 @@ GEM
       servolux
       tilt (~> 2.0)
       uglifier (~> 3.0)
+    middleman-disqus (1.2.0)
+      middleman-core (~> 4.0)
     middleman-syntax (3.0.0)
       middleman-core (>= 3.2)
       rouge (~> 2.0)
@@ -112,6 +114,7 @@ DEPENDENCIES
   builder (~> 3.0)
   middleman (~> 4.1)
   middleman-blog
+  middleman-disqus
   middleman-syntax
   nokogiri
   redcarpet (~> 3.3, >= 3.3.3)

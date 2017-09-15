@@ -16,6 +16,26 @@ set :markdown, :fenced_code_blocks => true, :smartypants => true
 
 activate :syntax
 
+# set site URL
+set :site_url, 'http://garciajames.com'
+# set site title
+set :site_title, 'James Garcia'
+# set site description (only used for meta description for the moment)
+set :site_description, 'My Portfolio'
+# set site author name
+set :site_author, 'James Garcia'
+# set site author profile information
+# set :site_author_profile, 'Lorem ipsum dolor sit amet, cu facilis indoctum interpretaris has. Ius ea quod euismod fierent, per in legere gubergren accommodare, ut labitur partiendo urbanitas duo. Tamquam inciderint at sed. Per at nibh graecis intellegebat. Probo brute ancillae sit ex, tota recusabo disputando usu et.'
+# set site author profile image (should be in images_dir)
+set :site_author_image, 'profile_pic.jpg'
+# when true, the page and site titles will be reversed (page title | site title)
+set :reverse_title, true
+# twitter/facebook/github/linkedin links in author page (otherwise set nil)
+set :social_links,
+    twitter: 'https://twitter.com',
+    facebook: 'https://facebook.com',
+    github: 'https://github.com/jamgar',
+    linkedin: 'https://linkedin.com'
 # Per-page layout changes:
 #
 # With no layout
