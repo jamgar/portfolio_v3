@@ -31,4 +31,5 @@ $(document).ready(function(){
       } // End if
     });
   }
+  $(".article-content img").addClass("img-responsive");
 });
