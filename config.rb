@@ -14,7 +14,7 @@ set :markdown, :fenced_code_blocks => true, :smartypants => true
 # Code highlighting
 ###
 
-activate :rouge_syntax
+activate :syntax
 
 # Per-page layout changes:
 #

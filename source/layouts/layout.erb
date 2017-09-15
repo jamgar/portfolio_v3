@@ -8,12 +8,13 @@
     <title>Blog Title<%= ' - ' + current_article.title unless current_article.nil? %></title>
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
     <%= stylesheet_link_tag "bootstrap.min" %>
+    <%= stylesheet_link_tag 'highlighting' %>
     <%= stylesheet_link_tag 'all' %>
   </head>
   <body>
 
     <%= partial 'layouts/navigation' %>
-    
+
     <%= yield %>
 
     <%= partial 'layouts/footer' %>
