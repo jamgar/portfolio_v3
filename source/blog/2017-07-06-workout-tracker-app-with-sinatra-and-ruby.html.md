@@ -1,7 +1,7 @@
 ---
 title: Workout Tracker app with Sinatra and Ruby
 tags: 'ruby, sinatra'
-date: 2017-09-15T11:19:30.940Z
+date: 2017-07-06T11:19:30.940Z
 image: null
 directory_index: false
 ---
