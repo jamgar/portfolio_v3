@@ -1,7 +1,7 @@
 ---
 title: The Gist of ORM
 tags: ruby
-date: 2017-09-15T11:09:57.644Z
+date: 2017-06-05T11:09:57.644Z
 image: null
 directory_index: false
 ---
