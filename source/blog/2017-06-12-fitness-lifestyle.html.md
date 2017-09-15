@@ -1,7 +1,7 @@
 ---
 title: Fitness Lifestyle
 tags: fitness
-date: 2017-09-15T11:16:28.925Z
+date: 2017-06-12T11:16:28.925Z
 image: /images/uploads/habit.jpg
 directory_index: false
 ---
