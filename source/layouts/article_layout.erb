@@ -15,7 +15,7 @@
           <div class="col-sm-12">
             <h2>Tags</h2>
             <% blog.tags.each do |tag, articles| %>
-              <span class="label label-success"><%= link_to "#{tag} (#{articles.size})", tag_path(tag) %></span>
+              <span class="label"><%= link_to "#{tag} (#{articles.size})", tag_path(tag) %></span>
             <% end %>
           </div>
         </div><!-- /.row -->
