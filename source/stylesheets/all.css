@@ -1,33 +1,64 @@
 body {
-  padding-top: 50px;
-  font-size: 2rem;
+  font-size: 1rem;
+}
+
+body,h1,h2,h3,h4,h5 {
+  font-family: "Poppins", sans-serif;
+}
+
+.w3-third img{
+  margin-bottom: -6px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.w3-third img:hover{
+  opacity: 1;
 }
 
 hr {
-  text-align: center;
-  width: 30%;
+  width:50px;
+  border: 5px solid #074b83 !important;
 }
 
-section {
-  padding: 50px 0;
+.section-heading {
+  color: #074b83
+}
+
+#about,
+#articles,
+#projects,
+#contact {
+  margin-top: 60px;
+  padding: 0 40px;
 }
 
 footer {
   padding: 20px;
-  background-color: #333;
+  background-color: grey ;
   color: #fff;
 }
 
+.hidden {
+  display: none;
+}
+
 /*--- Main ---*/
-.jumbotron {
+.w3-main {
+  margin-left: 300px;
+}
+
+#home {
+  padding-top: 70px;
+  margin-bottom: 20px;
   background-image: url("../images/uploads/banner.jpg");
-  height: 60vh;
+  height: 40vh;
   color: #ffffff;
 }
 
 #profile-pic {
-  max-width: 200px;
-  text-align: center;
+  width: 50%;
+  /*border-radius: 50%;*/
 }
 
 /*--- Article Styles ---*/
