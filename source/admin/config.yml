@@ -28,6 +28,7 @@ collections:
         label: "Projects Page"
         name: "projects"
         fields:
+          - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
           # - {label: Type, name: type, widget: hidden, default: projects}
           # - {label: Page, name: page, widget: hidden, default: "/project/template.html"}
-          - {label: Projects, name: projects, widget: list, fields: [{label: Name, name: name, widget: string}, {label: Path, name: path, widget: string}, {label: Image, name: image, widget: image}, {label: Description, name: description, widget: text}]}
+          # - {label: Projects, name: projects, widget: list, fields: [{label: Name, name: name, widget: string}, {label: Path, name: path, widget: string}, {label: Image, name: image, widget: image}, {label: Description, name: description, widget: text}]}
