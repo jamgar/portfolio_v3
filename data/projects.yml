@@ -1,26 +1,21 @@
 - name: My Portfolio1
-  id: 101
   path: project/my-portfolio-1
   image: /images/uploads/banner.jpg
   image_alt: Great Banner
   description: Uncontested, delightful classic.
 - name: My Portfolio2
-  id: 102
   path: project/my-portfolio-2
-  image:
+  image: null
   description: Uncontested, delightful classic.
 - name: My Portfolio3
-  id: 103
   path: project/my-portfolio-3
-  image:
+  image: null
   description: Uncontested, delightful classic.
 - name: My Portfolio4
-  id: 104
   path: project/my-portfolio-4
-  image:
+  image: null
   description: Uncontested, delightful classic.
 - name: My Portfolio5
-  id: 105
   path: project/my-portfolio-5
-  image:
+  image: null
   description: Uncontested, delightful classic.

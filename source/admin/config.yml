@@ -21,3 +21,13 @@ collections:
       - {label: "Featured Image", name: "image", widget: "image", required: false}
       - {label: "Pretty Url", name: "directory_index", widget: "hidden", default: false}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "data/projects.yml"
+        label: "Projects Page"
+        name: "projects"
+        fields:
+          - {label: Type, name: type, widget: hidden, default: projects}
+          - {label: Page, name: page, widget: hidden, default: "/projects.html"}
+          - {label: Projects, name: projects, widget: list, fields: [{label: Name, name: name, widget: string}, {label: Path, name: path, widget: string}, {label: Image, name: image, widget: image}, {label: Description, name: description, widget: text}]}

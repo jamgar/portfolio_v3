@@ -1,0 +1,31 @@
+---
+directory_index: false
+pageable: true
+per_page: 10
+---
+
+<div id="project" class="w3-main">
+  <h2 class="w3-center w3-padding-32">My Projects</h2>
+  <% if paginate && num_pages > 1 %>
+    <p>Page <%= page_number %> of <%= num_pages %></p>
+
+    <% if prev_page %>
+      <p><%= link_to 'Previous page', prev_page %></p>
+    <% end %>
+  <% end %>
+
+  <% data.projects.each do |project| %>
+    <div class="w3-card-2 w3-margin w3-white">
+      <div class="w3-container">
+        <h3><%= project.name %></h3>
+        <p><%= link_to "SEE MORE »", "#{project.path}.html", class: "w3-button w3-padding w3-white w3-border" %></p>
+      </div>
+    </div>
+  <% end %>
+
+  <% if paginate %>
+    <% if next_page %>
+      <p><%= link_to 'Next page', next_page %></p>
+    <% end %>
+  <% end %>
+</div>
