@@ -116,7 +116,7 @@ ActiveRecord::Base.establish_connection(
 require_all 'app'
 ```
 
-This is also were I make my connection between ActiveRecord and the database. In this case I used sqlite3 for my database. The other line I want to point out is `require_all` this is a gem that allows you to require all files in a directory instead of having to require each file individually. So I am requiring all files in the 'app' folder. 
+This is also were I make my connection between ActiveRecord and the database. In this case I used sqlite3 for my database. The other line I want to point out is `require_all` this is a gem that allows you to require all files in a directory instead of having to require each file individually. So I am requiring all files in the 'app' folder.
 
 The app folder is where the controllers, models, and views will be stored. Speaking of controllers, after creating the /app/controllers directory I created my application_controller.rb file. This is the file that is referred to in the config.ru file `run ApplicationController`.
 
@@ -163,7 +163,7 @@ Then next two files I created where `layout.erb` and `index.erb` in the app/view
 <h1>Welcome to Workout Tracker</h1>
 ```
 
-The main things I want to point out is the `<%= yield %> and `<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">`. The `<%= yield %>` identifies where the content of the other views will be displayed. The next thing is I am using w3schools css framework. This was actually one of the last steps implemented after I finished the applications. I initially developed it without any css because I wanted to focus on the functionality of the application. It was only after I finished that part did I go back and add css. I had never used w3css, but was wanting to and this project presented the opportunity. 
+The main things I want to point out is the `<%= yield %>` and `<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">`. The `<%= yield %>` identifies where the content of the other views will be displayed. The next thing is I am using w3schools css framework. This was actually one of the last steps implemented after I finished the applications. I initially developed it without any css because I wanted to focus on the functionality of the application. It was only after I finished that part did I go back and add css. I had never used w3css, but was wanting to and this project presented the opportunity.
 
 With all of this boilerplate set up I could go into my terminal and run `shotgun`. Then go to localhost:9393 and be present with the Welcome message.
 
@@ -219,7 +219,7 @@ class CreateWorkouts < ActiveRecord::Migration[5.1]
 end
 ```
 
-Everything here is pretty straight forward. I included the `:user_id` field for the one-to-many association. The other field is the `t.timestamp`, which will create the `:created_at` and `:updated_at` fields for me in my table. They are not necessary, but nice to have just in case I wanted to use these dates. 
+Everything here is pretty straight forward. I included the `:user_id` field for the one-to-many association. The other field is the `t.timestamp`, which will create the `:created_at` and `:updated_at` fields for me in my table. They are not necessary, but nice to have just in case I wanted to use these dates.
 
 ```ruby
 # workout.rb
@@ -255,7 +255,7 @@ class Exercise < ActiveRecord::Base
 end
 ```
 
-Again, I am adding the one-to-many association to workout_exercises, and the many-to-many to workouts 'through' workout_exercises. 
+Again, I am adding the one-to-many association to workout_exercises, and the many-to-many to workouts 'through' workout_exercises.
 
 The final table and model was the 'join' table, workout_exercises.
 
@@ -313,7 +313,12 @@ The first route is the workouts index route, which first checks if a user is log
 ```ruby
   ...
   post '/workouts' do
-    @workout = Workout.create(title: params[:title], date: params[:date], duration: params[:duration], note: params[:note], user_id: session[:user_id])
+    @workout = Workout.create(title: params[:title],
+                              date: params[:date],
+                              duration: params[:duration],
+                              note: params[:note],
+                              user_id: session[:user_id])
+
     @workout.exercise_ids = params[:exercises]
     if !params[:exercise].empty?
       @workout.exercises << Exercise.create(name: params[:exercise])
@@ -348,10 +353,14 @@ This is a 'post' route, which when the new workout form is submitted it will go 
       redirect to '/login'
     end
   end
-  
+
   patch '/workouts/:id' do
     @workout = Workout.find_by(id: params[:id])
-    @workout.update(title: params[:title], date: params[:date], duration: params[:duration], note: params[:note])
+    @workout.update(title: params[:title],
+                    date: params[:date],
+                    duration: params[:duration],
+                    note: params[:note])
+                    
     @workout.exercise_ids = params[:exercises]
     if !params[:exercise].empty?
       @workout.exercises << Exercise.create(name: params[:exercise])
@@ -387,7 +396,7 @@ The only thing I will cover in the views is the workout edit form because it sho
   </p>
   ...
 </form>
-</div> 
+</div>
 ```
 
 As you can see, it is basically HTML with some ruby in the <%= %> tags. The interesting part is the `<input name="_method" type="hidden" value="patch">` field inside the form. HTML in Sinatra basically only knows how to handle GET and POST methods in a form. So a hack to get the form to submit a PUT, PATCH, or DELETE is to create a hidden input field inside the form tags. You will also need to include the `use Rack::MethodOverride` in the config.ru file. I found that it needs to be declared before the other 'use' files or at least before any controller that is going to be using PUT, PATCH, or DELETE.

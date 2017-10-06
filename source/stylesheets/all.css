@@ -16,7 +16,7 @@ body,h1,h2,h3,h4,h5 {
   opacity: 1;
 }
 
-hr {
+.title-line {
   width:50px;
   border: 5px solid #074b83 !important;
 }
@@ -48,6 +48,12 @@ footer {
   margin-left: 300px;
 }
 
+@media only screen and (max-width: 992px) {
+    .w3-main {
+        margin-top: 85px;
+    }
+}
+
 #home {
   padding-top: 70px;
   margin-bottom: 20px;
@@ -71,4 +77,13 @@ footer {
 .article-post-meta {
   font-size: 1.2rem;
   color: #999;
+}
+
+.article-main {
+  margin-top: 85px;
+}
+
+.code-section {
+  padding: 5px;
+  overflow: scroll;
 }
