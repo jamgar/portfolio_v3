@@ -1,6 +1,6 @@
 - name: My Portfolio
   path: project/my-portfolio-1
-  link: https://www.garciajames.com
+  link: https://car-park-attendant-january-51882.netlify.com/
   image: /images/uploads/banner.jpg
   image_alt: Portfolio Banner
   description: This a portfolio/blog website. It was built using Middleman App, which is a static site generator. I host it on on Netlify.
