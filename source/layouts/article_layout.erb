@@ -17,7 +17,8 @@
   <body>
 
     <%= partial 'layouts/article_navigation' %>
-    <div class="article-main w3-padding-large">
+
+    <div class="article-main w3-padding-large w3-animate-opacity">
       <% if current_page.data.image %>
         <div id="banner" class="row">
           <%= tag :img, :src => current_page.data.image, class: "article-img center-block" %>
@@ -31,42 +32,16 @@
             <hr>
             <%= yield %>
           </div>
-          <div class="w3-col l4">
-            <div class="w3-margin w3-border">
-              <div class="w3-container w3-padding w3-theme-l5">
-                <h4>Recent Articles</h4>
 
-              </div>
-                <% blog.articles[0...3].each do |article| %>
-                  <ul class="w3-ul w3-hoverable w3-white">
-                    <li class="w3-padding-16 w3-border-bottom">
-                      <p><%= link_to article.title, article %></p>
-                        <small class="article-post-meta"><%= time_ago_in_words(article.date) %> ago</small>
-                    </li>
-                  </ul>
-                <% end %>
-            </div>
-            <div class="w3-margin w3-border">
-              <div class="w3-container w3-padding w3-theme-l5">
-                <h4>Tags</h4>
-              </div>
-              <div class="w3-container w3-padding-16">
-                <% blog.tags.each do |tag, articles| %>
-                <span class="w3-tag w3-light-grey w3-margin-bottom"><%= link_to "#{tag} (#{articles.size})", tag_path(tag) %></span>
-                <% end %>
-              </div>
-            </div>
-          </div>
+          <%= partial 'layouts/article_sidebar' %>
         </div><!-- /.row -->
-        <div class="w3-row">
-          <div class="w3-col l8 s12">
-            <%= partial 'layouts/disqus' %>
-            <!-- <a href="http://example.com/bar.html#disqus_thread">Link</a> -->
-          </div>
-        </div><!-- /.row -->
+
+        <%= partial 'layouts/disqus' %>
+
       </div><!-- /.container -->
       <script id="dsq-count-scr" src="//garciajames.disqus.com/count.js" async></script>
     </div>
+
     <%= partial 'layouts/article_footer' %>
 
 <!-- Placed at the end of the document so the pages load faster -->
