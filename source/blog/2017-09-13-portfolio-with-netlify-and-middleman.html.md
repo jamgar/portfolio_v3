@@ -7,3 +7,4 @@ directory_index: false
 ---
 I created this portfolio website with Netlify, and Middleman.
 
+Coming Soon…
