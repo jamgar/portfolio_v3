@@ -1,6 +1,12 @@
 - name: My Portfolio
   path: project/my-portfolio-1
-  link: https://car-park-attendant-january-51882.netlify.com/
+  link: https://www.garciajames.com/
   image: /images/uploads/banner.jpg
   image_alt: Portfolio Banner
   description: This a portfolio/blog website. It was built using Middleman App, which is a static site generator. I host it on on Netlify.
+- name: Uptown Thai
+  path: project/uptown-thai
+  link: http://www.uptownthai.net
+  image: /images/uploads/uptownthai.png
+  image_alt: Uptown Banner
+  description: This is a website for a Thai restaurant in Dallas TX. It is a static website using HTML, CSS, Javascript.
