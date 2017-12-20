@@ -10,3 +10,9 @@
   image: /images/uploads/uptownthai.png
   image_alt: Uptown Banner
   description: This is a website for a Thai restaurant in Dallas TX. It is a static website using HTML, CSS, Javascript.
+- name: TickCase
+  path: project/tickcase-app
+  link: https://protected-citadel-46134.herokuapp.com/
+  image: /images/uploads/tickcase.png
+  image_alt: TickCase App
+  description: This is a ticketing app to enter and track tickets. It is created with Ruby on Rails. A client can sign up for an account, create a ticket and messages on their tickets. The technician can manage the tickets. The administrator can manage all. Each users can create tickets and enter messages. The app is hosted on Heroku.
