@@ -16,3 +16,9 @@
   image: /images/uploads/tickcase.png
   image_alt: TickCase App
   description: This is a ticketing app to enter and track tickets. It is created with Ruby on Rails. A client can sign up for an account, create a ticket and messages on their tickets. The technician can manage the tickets. The administrator can manage all. Each users can create tickets and enter messages. The app is hosted on Heroku.
+- name: OrgBoard
+  path: project/orgboard-app
+  link: https://determined-keller-0474d9.netlify.com
+  image: /images/uploads/orgboard.png
+  image_alt: OrgBoard App
+  description: OrgBoard is an web application to create notes that are organized by boards that you create. Currently it is a simple and minimal note keeping application. To use, all you need to do is sign up, and begin organizing your notes. It is a React and Rails API project I created for learning purposes. Please feel free to try it out.
