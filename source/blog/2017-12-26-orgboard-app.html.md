@@ -1,7 +1,7 @@
 ---
 title: OrgBoard App
 tags: 'react, rails api'
-date: 2017-12-27T03:19:17.509Z
+date: 2017-12-26T03:19:17.509Z
 image: null
 directory_index: false
 ---
