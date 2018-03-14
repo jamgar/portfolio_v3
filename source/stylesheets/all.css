@@ -18,13 +18,11 @@ body,h1,h2,h3,h4,h5 {
 
 .title-line {
   width:50px;
-  border: 5px solid #70a236 !important;
-  /* 074b83 !important; */
+  border: 5px solid #67AC5B !important;
 }
 
 .section-heading {
-  color: #70a236;
-  /* color: #074b83; */
+  color: #67AC5B;
 }
 
 #about,
@@ -92,4 +90,5 @@ footer {
 
 .w3-sidebar {
   background-color: #303F53;
+  color: #fff;
 }
