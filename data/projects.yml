@@ -22,3 +22,9 @@
   image: /images/uploads/orgboard.png
   image_alt: OrgBoard App
   description: OrgBoard is an web application to create notes that are organized by boards that you create. Currently it is a simple and minimal note keeping application. To use, all you need to do is sign up, and begin organizing your notes. It is a React and Rails API project I created for learning purposes. Please feel free to try it out.
+- name: OpenCMS
+  path: project/opencms
+  link: https://github.com/jamgar/opencms
+  image: /images/uploads/opencms.png
+  image_alt: OpenCMS App
+  description: This is a SPA created without a JavaScript Framework. I used the project to challenge myself and strengthen my foundation of JavaScript. I am sure there are many areas of the code that can be refactored and/or cleaned up. It was a great learning experience and I hope you can get some inspiration from it and build upon this project.
