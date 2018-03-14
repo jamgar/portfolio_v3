@@ -89,3 +89,7 @@ footer {
   padding: 5px;
   overflow: scroll;
 }
+
+.w3-sidebar {
+  background-color: #303F53;
+}
