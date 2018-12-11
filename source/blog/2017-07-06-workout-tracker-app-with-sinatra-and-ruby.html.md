@@ -2,7 +2,7 @@
 title: Workout Tracker app with Sinatra and Ruby
 tags: 'ruby, sinatra'
 date: 2017-07-06T11:19:30.940Z
-image: null
+image: /images/uploads/macbook.jpg
 directory_index: false
 ---
 In this section of the Learn.co curriculum we covered Sinatra. [Sinatra](http://www.sinatrarb.com/) is a Domain Specific Language (DSL) framework for creating web applications in Ruby quickly. With Sinatra you can create a simple static website or a full fledged web application. At the end of the Learn.co Sinatra section I was tasked with building a web application with the following specification:
@@ -404,3 +404,4 @@ As you can see, it is basically HTML with some ruby in the <%= %> tags. The inte
 That is my Workout Tracker App. I was not fancy, but I learned from it, and that is what is most important. If you are learning Ruby and/or Rails then I would suggest learning Sinatra. It will give you a different tool to work with Ruby, and it is fun.
 
 Peace, Love, and Happy coding!
+
